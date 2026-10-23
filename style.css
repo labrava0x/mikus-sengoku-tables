@@ -1,0 +1,132 @@
+:root {
+    --bg-color: #12141c;         /* Deep dark navy-indigo background */
+    --card-bg: #1c1f2b;          /* Dark muted navy container */
+    --text-color: #d4e6d7;       /* Soft matcha-soda tinted text */
+    --accent-color: #2e3440;     /* Deep Nordic navy for table headers */
+    --border-color: #434c5e;     /* Slate border */
+    --highlight: #88c0d0;        /* Miku's headphone cyan accent */
+    --cardigan-brown: #d08770;   /* Warm cozy cardigan tone */
+    --muted-text: #b8c9bc;       /* Soft matcha-gray for quotes/subtitles */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 20px;
+}
+
+header h1 {
+    color: var(--highlight);
+    margin-bottom: 5px;
+}
+
+.header-subtitle {
+    font-size: 1.15rem;
+    color: var(--cardigan-brown);
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.header-quote {
+    font-style: italic;
+    color: var(--muted-text);
+}
+
+.content-section {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    color: var(--highlight);
+    margin-top: 0;
+}
+
+/* Table Layout & Styling */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 15px;
+    background-color: #161922;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+caption {
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: left;
+    color: var(--cardigan-brown);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+th {
+    background-color: var(--accent-color);
+    color: var(--text-color);  /* Changed from white to soft matcha soda! */
+    font-weight: 600;
+}
+
+tr:hover td {
+    background-color: rgba(136, 192, 208, 0.08);
+}
+
+.miku-quote {
+    background: rgba(46, 52, 64, 0.6);
+    border-left: 4px solid var(--cardigan-brown);
+    padding: 12px 15px;
+    margin-top: 15px;
+    border-radius: 0 6px 6px 0;
+    font-style: italic;
+    color: var(--text-color);
+}
+/* Headphone SVG Frame */
+.miku-headphones-frame {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+.headphones-svg {
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.5));
+}
